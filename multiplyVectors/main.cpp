@@ -1,14 +1,19 @@
-//
-//  main.cpp
-//  multiplyVectors
-//
-//  Created by Abel Christy Anand on 12/29/21.
-//
+//Abel Anand
 
 #include <iostream>
+#include <vector>
+#include <time.h>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+vector<int> nums;
+
+int main() {
+    srand(time(0));
+    int scalar;
+    cout << "Enter a number you want to multiply to 50 random numbers\n";
+    cin >> scalar;
+    for (int i=0; i<=50; i++) {
+        cout << ((rand()%100)+1) * scalar << endl;
+    }
 }
+ 
